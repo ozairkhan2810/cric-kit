@@ -6,15 +6,11 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1rem 1rem;
   background: var(--dark-blue);
   z-index: 10;
 }
 
 .navbar-list {
-  display: flex;
-  justify-content: space-between;
-  gap: 2rem;
   padding-right: 2rem;
 }
 
@@ -24,12 +20,12 @@ nav {
 
 .brand {
   height: 2rem;
-  padding-left: 1rem;
 }
 
 .search {
   position: absolute;
-  right: 1px;
+  right: 2px;
+  top: 2px;
 }
 
 .search-container {
@@ -66,10 +62,10 @@ aside {
 }
 
 button.banner-btn-primary {
-  position: absolute;
+  /* position: absolute;
   bottom: 1rem;
-  left: 1rem;
-  padding: 1rem 3rem;
+  right: 1rem;
+  padding: 1rem 3rem; */
 }
 
 .banner {
@@ -85,9 +81,9 @@ button.banner-btn-primary {
 }
 
 .img-banner {
-  width: 60%;
+  width: 85%;
   margin: 0 auto;
-  height: 28rem;
+  height: auto;
   margin-top: 3rem;
 }
 
