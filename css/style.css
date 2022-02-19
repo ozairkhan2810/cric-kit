@@ -15,12 +15,11 @@ body {
   background-color: var(--light-gray);
 }
 
-/* utilities */
 h4 {
   margin: 4px 0;
 }
 
-/* svg icons */
+/* svg icon size */
 .svg-icon {
   width: 1.5rem;
 }
