@@ -1,0 +1,21 @@
+.login-container {
+  height: 77.5vh;
+}
+
+.form-container {
+  background: var(--white);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  width: 20rem;
+  margin: 1rem auto;
+  gap: 1rem;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  padding: 4px 8px;
+  font-size: 1.2rem;
+}
