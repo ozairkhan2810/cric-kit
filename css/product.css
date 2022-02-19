@@ -1,0 +1,53 @@
+.content-container {
+  background: var(--light-gray);
+}
+
+.sidebar {
+  background: var(--white);
+  height: 80vh;
+  width: 20%;
+}
+
+.side-heading {
+  color: var(--dark-blue);
+}
+
+.main-container {
+  width: 78%;
+}
+
+.products {
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.product:hover {
+  cursor: pointer;
+  box-shadow: 5px 5px 20px var(--gray);
+}
+
+.clear {
+  text-decoration: underline;
+  color: var(--gray);
+  letter-spacing: 1px;
+  background: none;
+}
+
+.product-cart-button {
+  width: 90%;
+}
+
+.wishlist {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+input[type="range"] {
+  width: 100%;
+}
+
+div.card-body {
+  padding-bottom: 1rem;
+}
