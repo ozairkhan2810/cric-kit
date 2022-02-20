@@ -40,8 +40,12 @@ nav {
   outline: 1px transparent;
 }
 
+/* section */
+section {
+  margin-top: 6rem;
+}
+
 /* main */
-main,
 aside {
   margin-top: 5rem;
 }
