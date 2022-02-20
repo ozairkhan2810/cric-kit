@@ -11,6 +11,14 @@ nav {
   padding-right: 2rem;
 }
 
+.list-item {
+  font-size: 1.5rem;
+}
+
+.list-item a:hover {
+  color: var(--red);
+}
+
 .brand {
   height: 2rem;
 }
