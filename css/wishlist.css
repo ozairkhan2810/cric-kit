@@ -1,0 +1,10 @@
+span.search {
+    font-size: 2rem;
+}
+
+.wishlist-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

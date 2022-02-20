@@ -42,6 +42,7 @@
   position: absolute;
   top: 1rem;
   right: 1rem;
+  color: var(--red);
 }
 
 input[type="range"] {
