@@ -16,8 +16,8 @@ nav {
 }
 
 .search {
-    position: absolute;
-    right: 0;
+  position: absolute;
+  right: 0;
 }
 
 .input-container {
@@ -110,12 +110,12 @@ aside {
 }
 
 .product-name {
-    font-weight: bold;
-    margin: 0;
-    margin-top: 0.5rem;
-    font-size: 1.25rem;
-    text-align: center;
-  }
+  font-weight: bold;
+  margin: 0;
+  margin-top: 0.5rem;
+  font-size: 1.25rem;
+  text-align: center;
+}
 
 .ad {
   width: 95vw;
@@ -136,16 +136,4 @@ footer {
   background: var(--dark-blue);
   height: 5.5rem;
   margin-top: 1.5rem;
-}
-
-/* Login html */
-.login-container {
-  gap: 2rem;
-  height: 77.5vh;
-  justify-content: center;
-}
-
-.form-container {
-  gap: 2rem;
-  background: var(--white);
 }
