@@ -34,63 +34,79 @@
                     </button>
                 </li>
                 <li class="flex align-center justify-center white badge-container">
-                    <span class="material-icons">favorite_border</span>
-                    <span class="badge bg-red">5</span>
+                    <a class="cursor" href="./html/wishlist.html">
+                        <span class="material-icons">favorite_border</span>
+                        <span class="badge-icon">5</span>
+                    </a>
                 </li>
                 <li class="flex align-center justify-center white badge-container">
-                    <span class="material-icons"> shopping_cart </span>
-                    <span class="badge bg-red">5</span>
+                    <a class="cursor" href="./html/cart.html">
+                        <span class="material-icons"> shopping_cart </span>
+                        <span class="badge-icon">5</span>
+                    </a>
                 </li>
             </ul>
         </ul>
     </nav>
     <section>
         <main>
-            <div class="category flex gap-1 mb-1">
-                <div class="category-list flex justify-center align-center bg-white box-shadow">
-                    <img class="img-category" src="./assets/img/cricket-bat.png" alt="bat" />
-                </div>
-                <div class="category-list flex justify-center align-center bg-white box-shadow">
-                    <img class="img-category" src="./assets/img/cricket-ball.png" alt="ball" />
-                </div>
-                <div class="category-list flex justify-center align-center bg-white box-shadow">
-                    <img class="img-category" src="./assets/img/cap-merchandise.png" alt="cap" />
-                </div>
-                <div class="category-list flex justify-center align-center bg-white box-shadow">
-                    <img class="img-category" src="./assets/img/man-tshirt.png" alt="jersey" />
-                </div>
-                <div class="category-list flex justify-center align-center bg-white box-shadow">
-                    <img class="img-category" src="./assets/img/helmet.png" alt="helmet" />
-                </div>
-            </div>
             <div class="banner bg-white border-radius box-shadow rel">
                 <span class="banner-badge white bg-red border-radius bold-500">Grab Now!!</span>
                 <img class="img-banner mt-1" src="./assets/pics/banner.png" alt="banner" />
                 <div class="banner-btn pr-1 pb-1 flex gap-1">
                     <button class="btn btn-primary">SHOP NOW</button>
-                    <button class="btn btn-secondary">EXPLORE MORE</button>
+                    <a href="./html/product.html"><button class="btn btn-secondary">EXPLORE MORE</button></a>
                 </div>
             </div>
+            <div class="deal-container p-1 border-radius bg-white box-shadow">
+                <h2 class="center-text">Categories</h2>
+                <div class="category flex gap-1 mb-1">
+                    <div class="category-list flex flex-column gap-1 justify-center align-center bg-white box-shadow">
+                        <img class="img-category" src="./assets/img/cricket-bat.png" alt="bat" />
+                        <span class="bold-500">Bat</span>
+                    </div>
+                    <div class="category-list flex flex-column gap-1 justify-center align-center bg-white box-shadow">
+                        <img class="img-category" src="./assets/img/cricket-ball.png" alt="ball" />
+                        <span class="bold-500">Ball</span>
+                    </div>
+                    <div class="category-list flex flex-column gap-1 justify-center align-center bg-white box-shadow">
+                        <img class="img-category" src="./assets/img/cap-merchandise.png" alt="cap" />
+                        <span class="bold-500">Cap</span>
+                    </div>
+                    <div class="category-list flex flex-column gap-1 justify-center align-center bg-white box-shadow">
+                        <img class="img-category" src="./assets/img/man-tshirt.png" alt="jersey" />
+                        <span class="bold-500">Jersey</span>
+                    </div>
+                    <div class="category-list flex flex-column gap-1 justify-center align-center bg-white box-shadow">
+                        <img class="img-category" src="./assets/img/helmet.png" alt="helmet" />
+                        <span class="bold-500">Helmet</span>
+                    </div>
+                </div>
+
+            </div>
+
             <div class="deal-container flex flex-column border-radius bg-white box-shadow">
                 <h2 class="pl-1">Deals of the day</h2>
                 <div class="deal-items flex gap-1 pl-1 pb-1">
                     <div class="card-vertical product rel bg-white card-badge box-shadow">
                         <div class="card-img-container flex img-container">
-                            <img class="img-jpg" src="../assets/prod/ball2.jpg" alt="ball" />
+                            <img class="img-jpg" src="./assets/prod/ball1.png" alt="ball" />
                         </div>
                         <div class="card-body flex flex-column align-items">
                             <div class="product-name p-1">SG Ball</div>
+                            <div class="pl-1">Offer ends in 08:59:59 hours!</div>
                             <div class="card-sub-content p-1">
                                 Duke, Kookaburra & More...
                             </div>
                         </div>
                     </div>
-                    <div class="card-vertical product rel bg-white card-badge box-shadow">
+                    <div class="card-badge product rel bg-white box-shadow">
                         <div class="card-img-container flex img-container">
-                            <img class="img-jpg" src="./assets/prod/bat.jpg" alt="bat" />
+                            <img class="img-jpg" src="./assets/prod/bat1.png" alt="bat" />
+                            <span class="card-badge-text"> New Arrival </span>
                         </div>
                         <div class="card-body flex flex-column align-items">
-                            <div class="product-name p-1">Bat</div>
+                            <div class="product-name p-1">MRF Bat</div>
                             <div class="card-sub-content p-1">
                                 SG, English Willow & More...
                             </div>
@@ -98,21 +114,23 @@
                     </div>
                     <div class="card-vertical product rel bg-white card-badge box-shadow">
                         <div class="card-img-container flex img-container">
-                            <img class="img-jpg" src="../assets/prod/ball2.jpg" alt="card-pic" />
+                            <img class="img-jpg" src="./assets/prod/glovecsk.png" alt="card-pic" />
                         </div>
                         <div class="card-body flex flex-column align-items">
-                            <div class="product-name p-1">Glove</div>
+                            <div class="product-name p-1">Adidas Gloves</div>
+                            <div class="pl-1">Offer ends in 08:59:59 hours!</div>
                             <div class="card-sub-content p-1">
                                 SG, MRF & More...
                             </div>
                         </div>
                     </div>
-                    <div class="card-vertical product rel bg-white card-badge box-shadow">
+                    <div class="card-badge product rel bg-white box-shadow">
                         <div class="card-img-container flex img-container">
-                            <img class="img-jpg" src="../assets/prod/helmet.jpg" alt="helmet" />
+                            <img class="img-jpg" src="./assets/prod/helmetrcb.png" alt="helmet" />
+                            <span class="card-badge-text"> New Arrival </span>
                         </div>
                         <div class="card-body flex flex-column align-items">
-                            <div class="product-name p-1">Helmet</div>
+                            <div class="product-name p-1">Masuri Helmet</div>
                             <div class="card-sub-content p-1">
                                 Masuri, Shrey & More...
                             </div>
@@ -120,10 +138,11 @@
                     </div>
                     <div class="card-vertical product rel bg-white card-badge box-shadow">
                         <div class="card-img-container flex img-container">
-                            <img class="img-jpg" src="./assets/prod/jerseyrcb.jpg" alt="jersey" />
+                            <img class="img-jpg" src="./assets/prod/jerseyrcb.png" alt="jersey" />
                         </div>
                         <div class="card-body flex flex-column align-items">
                             <div class="product-name p-1">Jersey RCB</div>
+                            <div class="pl-1">Offer ends in 08:59:59 hours!</div>
                             <div class="card-sub-content p-1">
                                 RCB, CSK, MI, SRH & More...
                             </div>
@@ -136,9 +155,9 @@
                 <img class="img-ad" src="./assets/pics/ad.png" alt="ad" />
                 <img class="img-ad" src="./assets/pics/ad1.png" alt="ad" />
             </div>
-            <div class="banner flex-column bg-white">
+            <div class="banner-brand flex flex-column align-center bg-white">
                 <h2>Our Brands</h2>
-                <div class="flex justify-between gap-1 mb-1">
+                <div class="flex justify-between gap-2 p-1">
                     <img src="./assets/pics/bk.png" alt="kk" />
                     <img src="./assets/pics/bmrf.png" alt="mrf" />
                     <img src="./assets/pics/bnb.png" alt="nb" />
@@ -150,21 +169,48 @@
     </section>
 
     <footer class="flex flex-column justify-center align-center gap-1">
-        <div class="white bold-500">All rights reserved by <span class="red">CricKit</span> | Created by Ozair Khan
+        <div class="flex justify-between p-1">
+            <ul>
+                <li class="white font-size-large p-1">Home</li>
+                <li class="white font-size-large px-1">Product</li>
+                <li class="white font-size-large px-1">Cart</li>
+                <li class="white font-size-large px-1">wishlist</li>
+            </ul>
+            <ul>
+                <li class="white font-size-large p-1">Help</li>
+                <li class="white font-size-large px-1">Payments</li>
+                <li class="white font-size-large px-1">Shipping</li>
+                <li class="white font-size-large px-1">FAQ</li>
+            </ul>
+            <ul>
+                <li class="white font-size-large p-1">About</li>
+                <li class="white font-size-large px-1">Contact Us</li>
+                <li class="white font-size-large px-1">Mail Us</li>
+            </ul>
+            <div class="flex flex-column align-center gap-1">
+                <li class="white font-size-large p-1">Social</li>
+                <div class="facebook">
+                    <a href="#"><img class="svg-icon" src="../assets/icons-svg/facebook-app.svg" alt="facebook" /></a>
+                </div>
+                <div class="instagram">
+                    <a href="#"><img class="svg-icon" src="../assets/icons-svg/ig-instagram.svg" alt="instagram" /></a>
+                </div>
+                <div class="twitter">
+                    <a href="#"><img class="svg-icon" src="../assets/icons-svg/twitter-app.svg" alt="twitter" /></a>
+                </div>
+                <div class="youtube">
+                    <a href="#"><img class="svg-icon" src="../assets/icons-svg/youtube-color.svg" alt="youtube" /></a>
+                </div>
+            </div>
+            <ul class="flex flex-column gap-1">
+                <li class="white font-size-large p-1">Office Address</li>
+                <li class="white font-size-large px-1"> 1 Apple Park Way Cupertino, California, United States.</li>
+                <li class="white font-size-large px-1">Outer Ring Road, Devara Village, Bengaluru, Karnataka, India.
+                </li>
+            </ul>
         </div>
-        <div class="flex gap-1">
-            <div class="facebook">
-                <a href="#"><img class="svg-icon" src="./assets/icons-svg/facebook-app.svg" alt="facebook" /></a>
-            </div>
-            <div class="instagram">
-                <a href="#"><img class="svg-icon" src="./assets/icons-svg/ig-instagram.svg" alt="instagram" /></a>
-            </div>
-            <div class="twitter">
-                <a href="#"><img class="svg-icon" src="./assets/icons-svg/twitter-app.svg" alt="twitter" /></a>
-            </div>
-            <div class="youtube">
-                <a href="#"><img class="svg-icon" src="./assets/icons-svg/youtube-color.svg" alt="youtube" /></a>
-            </div>
+        <div class="white font-size-large bold-500 p-1">
+            All rights reserved by <span class="red">CricKit</span> | Created by Ozair Khan
         </div>
     </footer>
 </body>
