@@ -1,15 +1,12 @@
 .content-container {
   background: var(--light-gray);
+  margin-top: 6rem;
 }
 
 .sidebar {
   background: var(--white);
-  height: 80vh;
+  height: 85vh;
   width: 20%;
-}
-
-.side-heading {
-  color: var(--dark-blue);
 }
 
 .main-container {
