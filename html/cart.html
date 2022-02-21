@@ -15,7 +15,8 @@
     <nav class="p-1">
         <ul class="navbar-list flex justify-between">
             <li class="list-item flex align-center justify-center gap-1">
-                <a class="px-1" href="../index.html"><img class="brand" src="../assets/logo/crickit-logo.png" alt="crickit-logo" /></a>
+                <a class="px-1" href="../index.html"><img class="brand" src="../assets/logo/crickit-logo.png"
+                        alt="crickit-logo" /></a>
                 <a class="white px-1" href="../index.html">Home</a>
                 <a class="white px-1" href="../html/product.html">Product</a>
             </li>
@@ -32,13 +33,13 @@
                 <li class="flex align-center justify-center white badge-container">
                     <a href="../html/wishlist.html">
                         <span class="material-icons">favorite_border</span>
-                        <span class="badge bg-red">5</span>
-                    </a>  
+                        <span class="badge-icon">5</span>
+                    </a>
                 </li>
                 <li class="flex align-center justify-center white badge-container">
-                    <a href="../html/wishlist.html">
+                    <a href="../html/cart.html">
                         <span class="material-icons"> shopping_cart </span>
-                        <span class="badge bg-red">5</span>
+                        <span class="badge-icon">5</span>
                     </a>
                 </li>
             </ul>
@@ -50,7 +51,7 @@
         <main class="flex justify-center">
             <div class="wishlist-products flex wrap ml-1 gap-1">
                 <div class="card-horizontal product justify-center rel bg-white">
-                    <div class="card-img-container img-container">
+                    <div class="card-img-container row img-container">
                         <img src="../assets/prod/ball1.png" alt="card-pic" />
                     </div>
                     <div class="card-body flex flex-column align-items">
@@ -63,16 +64,17 @@
                         </div>
                         <div class="card-sub-content flex flex-column">
                             <div class="card-sub-content">
-                                <button class="product-cart-button btn-primary flex justify-center gap-1">Remove from Cart</button>
+                                <button class="product-cart-button btn-primary flex justify-center gap-1">Remove from
+                                    Cart</button>
                             </div>
                             <button class="product-cart-button btn-secondary flex align-center justify-center gap-1">
-                            <span class="material-icons wishlist"> favorite_border </span>Move to Wishlist</button>
+                                <span class="material-icons wishlist"> favorite_border </span>Move to Wishlist</button>
                         </div>
                     </div>
                 </div>
                 <div class="card-horizontal product justify-center rel bg-white">
-                    <div class="card-img-container img-container">
-                        <img src="../assets/prod/ball1.png" alt="card-pic" />
+                    <div class="card-img-container row img-container">
+                        <img class="img-jpg" src="../assets/prod/jerseycsk.png" alt="card-pic" />
                     </div>
                     <div class="card-body flex flex-column align-items">
                         <div class="product-name pb-1">2 Piece Leather Ball, ICC Standard</div>
@@ -84,7 +86,8 @@
                         </div>
                         <div class="card-sub-content flex flex-column">
                             <div class="card-sub-content">
-                                <button class="product-cart-button btn-primary flex justify-center gap-1">Remove from Cart</button>
+                                <button class="product-cart-button btn-primary flex justify-center gap-1">Remove from
+                                    Cart</button>
                             </div>
                             <button class="product-cart-button btn-secondary flex align-center justify-center gap-1">
                                 <span class="material-icons wishlist"> favorite_border </span>
@@ -120,22 +123,48 @@
         </main>
     </section>
     <footer class="flex flex-column justify-center align-center gap-1">
-        <div class="white bold-500">
-            All rights reserved by <span class="red">CricKit</span> | Created by Ozair Khan
+        <div class="flex justify-between p-1">
+            <ul>
+                <li class="white font-size-large p-1">Home</li>
+                <li class="white font-size-large px-1">Product</li>
+                <li class="white font-size-large px-1">Cart</li>
+                <li class="white font-size-large px-1">wishlist</li>
+            </ul>
+            <ul>
+                <li class="white font-size-large p-1">Help</li>
+                <li class="white font-size-large px-1">Payments</li>
+                <li class="white font-size-large px-1">Shipping</li>
+                <li class="white font-size-large px-1">FAQ</li>
+            </ul>
+            <ul>
+                <li class="white font-size-large p-1">About</li>
+                <li class="white font-size-large px-1">Contact Us</li>
+                <li class="white font-size-large px-1">Mail Us</li>
+            </ul>
+            <div class="flex flex-column align-center gap-1">
+                <li class="white font-size-large p-1">Social</li>
+                <div class="facebook">
+                    <a href="#"><img class="svg-icon" src="../assets/icons-svg/facebook-app.svg" alt="facebook" /></a>
+                </div>
+                <div class="instagram">
+                    <a href="#"><img class="svg-icon" src="../assets/icons-svg/ig-instagram.svg" alt="instagram" /></a>
+                </div>
+                <div class="twitter">
+                    <a href="#"><img class="svg-icon" src="../assets/icons-svg/twitter-app.svg" alt="twitter" /></a>
+                </div>
+                <div class="youtube">
+                    <a href="#"><img class="svg-icon" src="../assets/icons-svg/youtube-color.svg" alt="youtube" /></a>
+                </div>
+            </div>
+            <ul class="flex flex-column gap-1">
+                <li class="white font-size-large p-1">Office Address</li>
+                <li class="white font-size-large px-1"> 1 Apple Park Way Cupertino, California, United States.</li>
+                <li class="white font-size-large px-1">Outer Ring Road, Devara Village, Bengaluru, Karnataka, India.
+                </li>
+            </ul>
         </div>
-        <div class="flex gap-1">
-            <div class="facebook">
-                <a href="#"><img class="svg-icon" src="../assets/icons-svg/facebook-app.svg" alt="facebook" /></a>
-            </div>
-            <div class="instagram">
-                <a href="#"><img class="svg-icon" src="../assets/icons-svg/ig-instagram.svg" alt="instagram" /></a>
-            </div>
-            <div class="twitter">
-                <a href="#"><img class="svg-icon" src="../assets/icons-svg/twitter-app.svg" alt="twitter" /></a>
-            </div>
-            <div class="youtube">
-                <a href="#"><img class="svg-icon" src="../assets/icons-svg/youtube-color.svg" alt="youtube" /></a>
-            </div>
+        <div class="white font-size-large bold-500 p-1">
+            All rights reserved by <span class="red">CricKit</span> | Created by Ozair Khan
         </div>
     </footer>
 </body>
