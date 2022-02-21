@@ -1,7 +1,5 @@
-# cric-kit
-An e-commerce website
-
 # [Cric-Kit](https://cric-kit.netlify.app)
+An e-commerce website for all your wants pertaining to IPL.
 
 ### Landing page 
 - Multiple types of categories.
@@ -34,4 +32,4 @@ An e-commerce website
 
 
 # Screenshots
-# [Homepage](https://cric-kit.netlify.app)
+### [Homepage](https://cric-kit.netlify.app)
