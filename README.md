@@ -11,8 +11,8 @@ An e-commerce website for all your wants pertaining to IPL.
 ### Product Listing Page
 1. Lists of products
 2. Filter
-* 1. Sort by price
-* 2. Filter by category, rating, price, 
+* Sort by price
+* Filter by category, rating, price, 
 
 
 ### Authentication
