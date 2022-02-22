@@ -3,6 +3,7 @@
   --dark-blue: #1e3a8a;
   --light-sky-blue: #60a5fa;
   --white: #ffffff;
+  --light-white: #f3f3f3;
   --gray: #808080;
   --red: #ed1f27;
   --light-red: #ff6767;
@@ -19,6 +20,18 @@ h4 {
   margin: 4px 0;
 }
 
+button {
+  background-color: var(--light-white);
+}
+
+/* navbar style */
+span.badge-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  font-size: 1.1rem;
+  border: 2px solid var(--white);
+}
+
 /* svg icon size */
 .svg-icon {
   width: 1.5rem;
@@ -26,13 +39,18 @@ h4 {
 
 /* image size jpg */
 img.img-jpg {
-  height: 14rem;
-  width: 18rem;
+  height: 100%;
 }
 
 div.card-img-container {
-  display: flex;
   height: 15rem;
+  display: flex;
   justify-content: center;
   align-items: center;
+  background: var(--black);
+  margin: 1rem;
+}
+
+div.card-img-container.row {
+  width: 13rem;
 }

@@ -5,6 +5,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../assets/favicon_io/site.webmanifest">
     <title> All Products | CricKit </title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" href="https://bliss-ui.netlify.app/lib/index.css" />
@@ -14,10 +19,11 @@
 <body>
     <nav class="p-1">
         <ul class="navbar-list flex justify-between">
-            <li class="flex align-center justify-center">
-                <a href="../index.html">
-                    <img class="brand" src="../assets/logo/crickit-logo.png" alt="crickit-logo" />
-                </a>
+            <li class="list-item flex align-center justify-center gap-1">
+                <a class="px-1" href="../index.html"><img class="brand" src="../assets/logo/crickit-logo.png"
+                        alt="crickit-logo" /></a>
+                <a class="white px-1" href="../index.html">Home</a>
+                <a class="white px-1" href="../html/product.html">Product</a>
             </li>
             <li class="flex align-center justify-center">
                 <div class="rel input-container">
@@ -30,49 +36,52 @@
                     <button class="btn-primary">Logout</button>
                 </li>
                 <li class="flex align-center justify-center white badge-container">
-                    <a href="../html/wishlist.html">
+                    <a class="cursor" href="../html/wishlist.html">
                         <span class="material-icons">favorite_border</span>
-                        <span class="badge bg-red">5</span>
-                    </a>  
+                        <span class="badge-icon">5</span>
+                    </a>
                 </li>
                 <li class="flex align-center justify-center white badge-container">
-                    <a href="../html/wishlist.html">
+                    <a class="cursor" href="../html/cart.html">
                         <span class="material-icons"> shopping_cart </span>
-                        <span class="badge bg-red">5</span>
+                        <span class="badge-icon">5</span>
                     </a>
                 </li>
             </ul>
         </ul>
     </nav>
-
     <div class="content-container mt-1 flex gap-1">
         <aside class="sidebar flex flex-column gap-1 ml-1 p-1 box-shadow">
             <div class="flex justify-between align-center">
                 <h3 class="side-heading">Filters</h3>
                 <button class="clear">Clear</button>
             </div>
-            <div class="side-heading">
-                <h4>Price</h4>
-                <label for="vol"></label>
+            <div class="side-heading font-size-large bold-500">
+                <h4 class="pb-1">Price</h4>
+                <div class="slider-value">
+                    <span>100</span>
+                    <span>5000</span>
+                    <span>10000</span>
+                </div>
                 <input type="range" id="vol" name="vol" min="100" max="10000" step="100" />
             </div>
             <div class="side-heading">
                 <h4>Category</h4>
                 <ul>
-                    <li class="flex align-center">
-                        <input type="checkbox" />
+                    <li class="flex align-center pb-1">
+                        <input id="bat" type="checkbox" />
                         <label for="bat"> Bat </label>
                     </li>
-                    <li class="flex align-center">
-                        <input type="checkbox" />
+                    <li class="flex align-center pb-1">
+                        <input id="ball" type="checkbox" />
                         <label for="ball"> Ball </label>
                     </li>
-                    <li class="flex align-center">
-                        <input type="checkbox" />
+                    <li class="flex align-center pb-1">
+                        <input id="glove" type="checkbox" />
                         <label for="glove"> Glove </label>
                     </li>
-                    <li class="flex align-center">
-                        <input type="checkbox" />
+                    <li class="flex align-center pb-1">
+                        <input id="jersey" type="checkbox" />
                         <label for="jersey"> Jersey </label>
                     </li>
                 </ul>
@@ -80,32 +89,32 @@
             <div class="side-heading">
                 <h4>Rating</h4>
                 <ul>
-                    <li class="flex align-center">
-                        <input type="radio" />
-                        <label for="bat"> 4* and above </label>
+                    <li class="flex align-center pb-1">
+                        <input id="four-star" type="radio" class="filter-rating" />
+                        <label for="four-star"> 4* and above </label>
+                    </li>
+                    <li class="flex align-center pb-1">
+                        <input id="three-star" type="radio" class="filter-rating" />
+                        <label for="three-star"> 3* and above </label>
+                    </li>
+                    <li class="flex align-center pb-1">
+                        <input id="two-star" type="radio" class="filter-rating" />
+                        <label for="two-star"> 2* and above </label>
                     </li>
                     <li class="flex align-center">
-                        <input type="radio" />
-                        <label for="ball"> 3* and above </label>
-                    </li>
-                    <li class="flex align-center">
-                        <input type="radio" />
-                        <label for="glove"> 2* and above </label>
-                    </li>
-                    <li class="flex align-center">
-                        <input type="radio" />
-                        <label for="helmet"> 1* and above </label>
+                        <input id="one-star" type="radio" class="filter-rating" />
+                        <label for="one-star"> 1* and above </label>
                     </li>
                 </ul>
             </div>
             <div class="side-heading">
                 <h4>Sort by</h4>
                 <ul>
-                    <li class="flex align-center">
+                    <li class="flex align-center pb-1">
                         <input type="radio" />
                         <label for="bat"> Price - Low to High </label>
                     </li>
-                    <li class="flex align-center">
+                    <li class="flex align-center pb-1">
                         <input type="radio" />
                         <label for="ball"> Price - High to Low </label>
                     </li>
@@ -114,15 +123,15 @@
         </aside>
 
         <main class="main-container p-1 box-shadow">
-            <h2>Showing All Products</h2>
+            <h2>Showing All Products (8)</h2>
             <div class="products flex">
-                <div class="card-vertical product rel bg-white">
+                <div class="card-badge product rel bg-white">
                     <div class="card-img-container flex img-container">
                         <img src="../assets/prod/ball1.png" alt="card-pic" />
                         <span class="material-icons wishlist">favorite_border</span>
                     </div>
                     <div class="card-body flex flex-column align-items">
-                        <div class="product-name pl-1">2 Piece Leather Ball, ICC Standard</div>
+                        <div class="product-name px-1">2 Piece Leather Ball, ICC Standard</div>
                         <div class="card-sub-content p-1 flex flex-column gap-1">Rs.699/- Upto 40% off
                             <div class="rating-simple flex align-center">
                                 <span class="material-icons rating"> star </span>
@@ -137,13 +146,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-vertical product rel bg-white">
+                <div class="card-badge product rel bg-white">
                     <div class="card-img-container flex img-container">
-                        <img src="../assets/prod/ball1.png" alt="card-pic" />
+                        <img class="img-jpg" src="../assets/prod/glovecsk.png" alt="card-pic" />
                         <span class="material-icons wishlist">favorite_border</span>
                     </div>
                     <div class="card-body flex flex-column align-items">
-                        <div class="product-name pl-1">2 Piece Leather Ball, ICC Standard</div>
+                        <div class="product-name px-1">SS Ecolite Batting Gloves</div>
                         <div class="card-sub-content p-1 flex flex-column gap-1">Rs.699/- Upto 40% off
                             <div class="rating-simple flex align-center">
                                 <span class="material-icons rating"> star </span>
@@ -158,13 +167,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-vertical product rel bg-white">
+                <div class="card-badge product rel bg-white">
                     <div class="card-img-container flex img-container">
-                        <img src="../assets/prod/ball1.png" alt="card-pic" />
+                        <img class="img-jpg" src="../assets/prod/bat3.png" alt="card-pic" />
                         <span class="material-icons wishlist">favorite_border</span>
                     </div>
                     <div class="card-body flex flex-column align-items">
-                        <div class="product-name pl-1">2 Piece Leather Ball, ICC Standard</div>
+                        <div class="product-name px-1">POPULAR WILLOW CRICKET BAT</div>
                         <div class="card-sub-content p-1 flex flex-column gap-1">Rs.699/- Upto 40% off
                             <div class="rating-simple flex align-center">
                                 <span class="material-icons rating"> star </span>
@@ -179,13 +188,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-vertical product rel bg-white">
+                <div class="card-badge product rel bg-white">
                     <div class="card-img-container flex img-container">
-                        <img src="../assets/prod/ball1.png" alt="card-pic" />
+                        <img class="img-jpg" src="../assets/prod/jerseysrh.png" alt="card-pic" />
                         <span class="material-icons wishlist">favorite_border</span>
                     </div>
                     <div class="card-body flex flex-column align-items">
-                        <div class="product-name pl-1">2 Piece Leather Ball, ICC Standard</div>
+                        <div class="product-name px-1">Printed POlO SRH Jersey</div>
                         <div class="card-sub-content p-1 flex flex-column gap-1">Rs.699/- Upto 40% off
                             <div class="rating-simple flex align-center">
                                 <span class="material-icons rating"> star </span>
@@ -200,13 +209,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-vertical product rel bg-white">
+                <div class="card-badge product rel bg-white">
                     <div class="card-img-container flex img-container">
                         <img src="../assets/prod/ball1.png" alt="card-pic" />
                         <span class="material-icons wishlist">favorite_border</span>
                     </div>
                     <div class="card-body flex flex-column align-items">
-                        <div class="product-name pl-1">2 Piece Leather Ball, ICC Standard</div>
+                        <div class="product-name px-1">2 Piece Leather Ball, ICC Standard</div>
                         <div class="card-sub-content p-1 flex flex-column gap-1">Rs.699/- Upto 40% off
                             <div class="rating-simple flex align-center">
                                 <span class="material-icons rating"> star </span>
@@ -221,13 +230,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-vertical product rel bg-white">
+                <div class="card-badge product rel bg-white">
                     <div class="card-img-container flex img-container">
                         <img src="../assets/prod/ball1.png" alt="card-pic" />
                         <span class="material-icons wishlist">favorite_border</span>
                     </div>
                     <div class="card-body flex flex-column align-items">
-                        <div class="product-name pl-1">2 Piece Leather Ball, ICC Standard</div>
+                        <div class="product-name px-1">2 Piece Leather Ball, ICC Standard</div>
                         <div class="card-sub-content p-1 flex flex-column gap-1">Rs.699/- Upto 40% off
                             <div class="rating-simple flex align-center">
                                 <span class="material-icons rating"> star </span>
@@ -242,13 +251,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-vertical product rel bg-white">
+                <div class="card-badge product rel bg-white">
                     <div class="card-img-container flex img-container">
-                        <img src="../assets/prod/ball1.png" alt="card-pic" />
+                        <img class="img-jpg" src="../assets/prod/jerseycsk.png" alt="card-pic" />
                         <span class="material-icons wishlist">favorite_border</span>
                     </div>
                     <div class="card-body flex flex-column align-items">
-                        <div class="product-name pl-1">2 Piece Leather Ball, ICC Standard</div>
+                        <div class="product-name px-1">Printed POlO CSK Jersey</div>
                         <div class="card-sub-content p-1 flex flex-column gap-1">Rs.699/- Upto 40% off
                             <div class="rating-simple flex align-center">
                                 <span class="material-icons rating"> star </span>
@@ -263,13 +272,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-vertical product rel bg-white">
+                <div class="card-badge product rel bg-white">
                     <div class="card-img-container flex img-container">
-                        <img src="../assets/prod/ball1.png" alt="card-pic" />
+                        <img class="img-jpg" src="../assets/prod/helmetrcb.png" alt="card-pic" />
                         <span class="material-icons wishlist">favorite_border</span>
                     </div>
                     <div class="card-body flex flex-column align-items">
-                        <div class="product-name pl-1">2 Piece Leather Ball, ICC Standard</div>
+                        <div class="product-name px-1">DSC Cricket Helmet grill</div>
                         <div class="card-sub-content p-1 flex flex-column gap-1">Rs.699/- Upto 40% off
                             <div class="rating-simple flex align-center">
                                 <span class="material-icons rating"> star </span>
@@ -288,22 +297,48 @@
         </main>
     </div>
     <footer class="flex flex-column justify-center align-center gap-1">
-        <div class="white bold-500">
-            All rights reserved by <span class="red">CricKit</span> | Created by Ozair Khan
+        <div class="flex justify-between p-1">
+            <ul>
+                <li class="white font-size-large p-1">Home</li>
+                <li class="white font-size-large px-1">Product</li>
+                <li class="white font-size-large px-1">Cart</li>
+                <li class="white font-size-large px-1">wishlist</li>
+            </ul>
+            <ul>
+                <li class="white font-size-large p-1">Help</li>
+                <li class="white font-size-large px-1">Payments</li>
+                <li class="white font-size-large px-1">Shipping</li>
+                <li class="white font-size-large px-1">FAQ</li>
+            </ul>
+            <ul>
+                <li class="white font-size-large p-1">About</li>
+                <li class="white font-size-large px-1">Contact Us</li>
+                <li class="white font-size-large px-1">Mail Us</li>
+            </ul>
+            <div class="flex flex-column align-center gap-1">
+                <li class="white font-size-large p-1">Social</li>
+                <div class="facebook">
+                    <a href="#"><img class="svg-icon" src="../assets/icons-svg/facebook-app.svg" alt="facebook" /></a>
+                </div>
+                <div class="instagram">
+                    <a href="#"><img class="svg-icon" src="../assets/icons-svg/ig-instagram.svg" alt="instagram" /></a>
+                </div>
+                <div class="twitter">
+                    <a href="#"><img class="svg-icon" src="../assets/icons-svg/twitter-app.svg" alt="twitter" /></a>
+                </div>
+                <div class="youtube">
+                    <a href="#"><img class="svg-icon" src="../assets/icons-svg/youtube-color.svg" alt="youtube" /></a>
+                </div>
+            </div>
+            <ul class="flex flex-column gap-1">
+                <li class="white font-size-large p-1">Office Address</li>
+                <li class="white font-size-large px-1"> 1 Apple Park Way Cupertino, California, United States.</li>
+                <li class="white font-size-large px-1">Outer Ring Road, Devara Village, Bengaluru, Karnataka, India.
+                </li>
+            </ul>
         </div>
-        <div class="flex gap-1">
-            <div class="facebook">
-                <a href="#"><img class="svg-icon" src="../assets/icons-svg/facebook-app.svg" alt="facebook" /></a>
-            </div>
-            <div class="instagram">
-                <a href="#"><img class="svg-icon" src="../assets/icons-svg/ig-instagram.svg" alt="instagram" /></a>
-            </div>
-            <div class="twitter">
-                <a href="#"><img class="svg-icon" src="../assets/icons-svg/twitter-app.svg" alt="twitter" /></a>
-            </div>
-            <div class="youtube">
-                <a href="#"><img class="svg-icon" src="../assets/icons-svg/youtube-color.svg" alt="youtube" /></a>
-            </div>
+        <div class="white font-size-large bold-500 p-1">
+            All rights reserved by <span class="red">CricKit</span> | Created by Ozair Khan
         </div>
     </footer>
 </body>
